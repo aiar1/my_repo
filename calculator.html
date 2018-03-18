@@ -8,6 +8,14 @@ function cube(){
 var num=document.getElementByld("n1");
 num.value=Mat.pow(num.value, 3);
 }
+function cuarta() {
+var num = document.getElementById("n1");
+num.value = Math.pow(num.value, 4);
+}
+function seno_grados() {
+var num = document.getElementById("n1");
+num.value = Math.sin(num.value*Math.PI/180);
+}
 </script>
 </head>
 <body>
@@ -15,6 +23,7 @@ num.value=Mat.pow(num.value, 3);
 Number:
 <input type="text" id="n1"><p>
 <button onclick="cube()">x^3</button>
-<buttton onclick="seno()">sin(x)</button>
+<button onclick="cuarta()"> x^4 </button>
+<buttton onclick="seno_grados()">sin(grados)</button>
 </body>
 </html>
